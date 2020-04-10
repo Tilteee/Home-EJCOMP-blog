@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .hrEquipe{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-bottom: 5px solid white;
+    border-radius: 7px 7px 7px 7px;
+    width: 60%;  
+    align-self: center;
+    margin-top: 1%;
+  }
+  .Equipe{
+    background-image: linear-gradient(to bottom, #12264a, #193b73, #21509f, #2b67cd, #397efd); 
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.9fr 0.9fr;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .itemMenu{
+    margin-left: 40px;
+    display: flex;
+    align-self: center;
+    flex-direction: r;
+    text-decoration:none;
+  }
+  .itemMenu:hover{
+    border-bottom: 1px solid white;
+  }
+
+  .TittleEquipe {
+    text-align: center;
+    color:white; 
+    font-size: 200%;
+  }
+  .TittleEquipe > h5{
+    font-size: 15pt;
+  }
+  .CardMembros{
+    position: relative;
+    max-width: 230px;
+    height: 200px;
+    max-height: 240px;
+  }
+  .FotoMembro{
+      display: flex;
+      width: 230px;
+      height: 200px;
+      border-radius: 30px;
+      object-fit: cover;
+
+  }
+  .InfoMembros{
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    color: #fff;
+    background-color: black;
+    overflow: hidden;
+    width: 230px;
+    height: 0;
+    transition: .5s all;
+    flex-direction: column;
+    display: flex;
+     text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .CardMembros:hover .InfoMembros {
+    height: 100%;
+    opacity: 0.9;
+  }
+  .Logo{
+    background: url('../../Imagem/ejcomp.png');
+    width: 180px;
+    height: 42px;
+    background-size: 100% 100%;
+  }
+  .react-multi-carousel-item {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+  }
