@@ -1,6 +1,6 @@
 {
-  "homepage": "*",
-  "name": "Home-EJCOMP-blog",
+  "homepage": ".",
+  "name": "home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
