@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import Principal from './Components/Principal/Principal'
 import Equipe from './Components/Equipe/Equipe' 
 import Blog from './Components/Blog/Blog'
@@ -8,7 +8,7 @@ import Login from './Telas/Painel/RoutesPainel'
 
 export default function Routes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
             <Route exact path="/" component={Principal} />
             <Route exact path="/equipe" component={Equipe} />
@@ -17,6 +17,6 @@ export default function Routes() {
             <Route exact path="/painel" component={Login} />
             <Route path="*" component={() => <h1>15</h1>} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
