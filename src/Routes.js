@@ -10,7 +10,7 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-            <Route path="/Home-EJCOMP-blog" component={Principal} />
+            <Route path="/" component={Principal} />
             <Route path="/equipe" component={Equipe} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/blog" component={Blog} />
