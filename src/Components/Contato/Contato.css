@@ -1,0 +1,88 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 20000;
+
+}
+.Header{
+    font-size: 20pt;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.modalForms{
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #fafafa;
+    box-shadow:  0 4px 4px black;
+    animation-name: fadeScale;
+    animation-duration: 1.1s;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0px;
+    width: 60%;  
+    height: auto;
+}
+.contentForms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width: 90%;
+    background-color:  transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    outline: 0;
+    display: block;
+    margin: 25px;   
+    font-family: 'Roboto';
+}
+.modalForms > button {
+    background-color: #12264A;
+    border-radius: 20px;
+    padding: 5px 60px 5px 60px;
+    color: #fafafa;
+    outline: 0;
+}
+.Cancel{
+    font-size: 20pt;
+}
+.Cancel:hover{
+    color: #12264A;
+    transition: color .5s ease;
+
+}
+.envio{
+    margin-top: 5%;
+    box-shadow:  0 6px 3px black;
+}
+.envio:hover{
+    background-color: black;
+    transition: background-color .5s ease;
+}
+
+@media screen and (max-width:425px){
+   .contentForms{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+   }
+  
+   .modalForms{
+       height: 100vh;
+       width: 100%;
+       border-radius: 0;
+   }
+
+}
